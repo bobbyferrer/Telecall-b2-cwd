@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Parallax</title>
+</head>
+<body>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/img5.jpg" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header grey-text">Parallax example</h2>
+      <a class="btn purple waves-effect waves-light" onclick="M.toast({
+        html: 'Creative Web Design',
+        inDuration: 1000,
+        completeCallback: function() {
+          alert('Your toast was dismissed');
+        },
+        classes: 'rounded'
+        
+        })">Toast</a>
+        <a class="btn tooltipped pink" data-position="bottom" data-tooltip="I am a tooltip">Hover me</a>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sint autem veniam fugiat expedita voluptatum aliquam accusamus nihil in error vitae quisquam nobis, iusto, debitis quae quod odit! Quisquam sed voluptas nam veritatis, sit officiis nulla. Et velit fugit cum aperiam ipsum eos, placeat quis nihil dolor! Minus modi reprehenderit explicabo officia odio excepturi culpa, perspiciatis sint beatae voluptates dolorem rerum aspernatur ab velit quod, eaque ipsa laboriosam magnam odit alias? Quidem minus laborum dicta voluptates, laboriosam labore voluptas tenetur numquam quam aperiam soluta aspernatur temporibus facere illo repudiandae dolores molestiae qui, atque odio omnis eum esse non quo. Ipsam delectus aut sequi eius dolorum optio soluta nam voluptatibus perspiciatis modi error deleniti, laudantium molestiae est quod expedita ratione alias maiores corrupti. Distinctio, nulla debitis maxime laboriosam dolore iusto ad, minus quaerat recusandae eos impedit repellendus. Fuga, expedita vitae. Voluptatum, sint ut. Quae, illum tenetur. Quibusdam cupiditate facere dicta itaque distinctio laboriosam? Commodi iste voluptate deleniti recusandae, possimus optio provident fuga vitae, assumenda sapiente eum ratione rem ea tenetur blanditiis adipisci natus veniam ipsum quam quidem. Facilis eligendi corporis sit a libero nulla tenetur autem hic nobis voluptatum exercitationem, distinctio commodi eum, dolores saepe veritatis dignissimos nesciunt. Ex corrupti dolore cum nihil perspiciatis ipsam atque amet quos alias deleniti possimus sed nisi ab culpa quia beatae expedita rerum iusto et fugit, veniam natus, nobis asperiores. Asperiores, ad? Laboriosam blanditiis vitae, repellat nam perferendis tempora corporis enim fuga hic debitis delectus consequuntur a ab odit quis nemo assumenda cupiditate vero repudiandae animi tenetur ullam? Nemo, suscipit dignissimos iure amet sint obcaecati inventore animi id molestiae ducimus numquam optio omnis laudantium sunt commodi. Maxime, dolore nostrum ipsam eos sed doloremque assumenda deleniti quae dolorem labore at voluptas eveniet quos itaque architecto iste blanditiis a nisi provident distinctio natus libero officiis? Doloremque, alias!</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/img4.jpg" alt="">
+    </div>
+  </div>
+
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      // Init parallax
+      $('.parallax').parallax({
+        responsiveThreshold: 0
+      });
+    //  Init tooltip
+    $('.tooltipped').tooltip({
+      exitDelay: 1000
+    });
+    });
+  </script>
+</body>
+</html>
